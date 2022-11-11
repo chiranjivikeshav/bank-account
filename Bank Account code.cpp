@@ -2,18 +2,18 @@
 using namespace std;
 #include<iomanip>
 
-class bank{
+class bank
+{
       char name[20];
       int acno;
       char actype[20];
       int bal;
 public :
-      void opbal(void)
-      void deposit(void)
-      void withdraw(void)
-      void display(void)
+      void opbal(void);
+      void deposit(void);
+      void withdraw(void);
+      void display(void);
 };
-
      void bank:: opbal(void)
  {
     cout<<endl<<endl;
@@ -33,7 +33,7 @@ int deposit=0;
 cout<<"Enter deposit amount :-\t";
 cin>>deposit;
 bal=deposit+bal;
-cout<<"\nBalance amount =\t\t"<<bal;
+cout<<"\n Deposit Balance :- =\t"<<bal;
 }
 
 void bank:: withdraw(void)
@@ -46,17 +46,17 @@ void bank:: withdraw(void)
     if(bal>withdraw)
     {
         bal=bal-withdraw;
-        cout<<"\nAfter withdraw Balance is = \t";
+        cout<<"\nAfter withdraw Balance is = \t"<<bal;
     }
     else
     {
-        cout<<"Not enough balance ";
+        cout<<"\n\t Not enough balance ";
     }
 }
  
  void bank::display(void)
  {
-cout<<
+cout<<endl<<endl<<endl;
 cout<<setw(50)<<" Details"<<endl;
 cout<<setw(50)<<" name  "<<name<<endl;
 cout<<setw(50)<<"A/c No. "<<acno<<endl;
@@ -67,7 +67,8 @@ cout<<setw(50)<<" Balance "<<bal<<endl;
 int main(){
      bank o1;
      int choice ;
-     do{ 
+     do
+     { 
         cout<<"\n\n\n\t Banking system program";
         cout<<"\n\nChoice List\n\n";
         cout<<"1)To assign Initial Value\n";
