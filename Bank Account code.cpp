@@ -17,46 +17,46 @@ public :
      void bank:: opbal(void)
  {
     cout<<endl<<endl;
-    cout<<"Enter name :-\t";
+    cout<<"Enter name : "<<endl;
     cin>>name;
-    cout<<"Enter account number :-\t";
+    cout<<"Enter account number : "<<endl;
     cin>>acno;
-    cout<<"Enter account type :-\t ";
+    cout<<"Enter account type : "<<endl;
     cin>>actype;
-    cout<<"Enter opening balance :-\t";
+    cout<<"Enter opening balance : "<<endl;
     cin>>bal;
  }
 
  void bank::deposit(void)
 {
 int deposit=0;
-cout<<"Enter deposit amount :-\t";
+cout<<"Enter deposit amount :"<<endl;
 cin>>deposit;
 bal=deposit+bal;
-cout<<"\n Deposit Balance :- =\t"<<bal;
+cout<<" Deposit Balance :- = "<<bal<<endl;
 }
 
 void bank:: withdraw(void)
 {
     int withdraw;
-    cout<<"\nBalance amount = \t\t"<<bal;
-    cout<<"\nEnter withdraw Amount :-\t";
+    cout<<"Balance amount = "<<bal<<endl;
+    cout<<"Enter withdraw Amount :- "<<endl;
     cin>>withdraw;
 
     if(bal>withdraw)
     {
         bal=bal-withdraw;
-        cout<<"\nAfter withdraw Balance is = \t"<<bal;
+        cout<<"After withdraw Balance is = "<<bal<<endl;
     }
     else
     {
-        cout<<"\n\t Not enough balance ";
+        cout<<" Not enough balance "<<endl;
     }
 }
  
  void bank::display(void)
  {
-cout<<endl<<endl<<endl;
+cout<<endl<<endl;
 cout<<setw(50)<<" Details"<<endl;
 cout<<setw(50)<<" name  "<<name<<endl;
 cout<<setw(50)<<"A/c No. "<<acno<<endl;
@@ -69,14 +69,14 @@ int main(){
      int choice ;
      do
      { 
-        cout<<"\n\n\n\t Banking system program";
-        cout<<"\n\nChoice List\n\n";
-        cout<<"1)To assign Initial Value\n";
-        cout<<"2)To Deposit\n";
-        cout<<"3)To Withdraw\n";
-        cout<<"4)To Display All Details\n";
-        cout<<"5) EXIT\n";
-        cout<<" Enter your choice :-";
+        cout<<" Banking system program"<<endl;
+        cout<<"Choice List "<<endl;
+        cout<<"1)To assign Initial Value "<<endl;
+        cout<<"2)To Deposit"<<endl;
+        cout<<"3)To Withdraw"<<endl;
+        cout<<"4)To Display All Details"<<endl;
+        cout<<"5) EXIT"<<endl;
+        cout<<" Enter your choice :-"<<endl;
         cin>>choice;
         switch(choice)
 {
@@ -93,3 +93,4 @@ break;
      end:
     return 0;
 }
+
